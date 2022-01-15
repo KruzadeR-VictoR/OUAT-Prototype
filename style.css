@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-image img {
+  height: 60px;
+}
+
+.header-image h2 {
+  font-size: 2rem;
+  color: green;
+}
+
+.navbar-nav li:hover {
+  background-color: whitesmoke;
+}
+
+.navbar-nav li:hover a {
+  color: #198854 !important;
+  font-weight: bold;
+}
+
+.navbar-nav a {
+  color: whitesmoke !important;
+}
+
+.navbar-nav .active {
+  background-color: whitesmoke;
+  border: inset 1px solid #198854;
+}
+
+.navbar-nav .active a {
+  color: #198854 !important;
+  font-weight: bold;
+}
+
+.about_University {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  text-align: justify;
+  padding: 0 2rem;
+}
+
+.about_University h2 {
+  color: #198854;
+}
+
+.about_University h2::first-letter {
+  font-size: 3rem;
+}
+
+.about_University a {
+  text-decoration: none;
+  color: #198854;
+}
+
+.about_University a:hover {
+  text-decoration: underline;
+}
+
+.notices {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  border-radius: 5px;
+  background-color: rgba(241, 234, 234, 0.445);
+}
+
+.notices h3 {
+  font-weight: 100;
+}
+
+.notices .notice {
+  cursor: pointer;
+  gap: 1rem;
+  border: 1px solid #198854;
+  border-radius: 0 10px 10px 0;
+  -webkit-box-shadow: 0px 8px 24px -10px rgba(0, 0, 0, 0.322);
+          box-shadow: 0px 8px 24px -10px rgba(0, 0, 0, 0.322);
+}
+
+.notices .notice .date {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #198854;
+  color: white;
+}
+
+.notices .notice .caption {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-weight: bold;
+}
+
+.notices .notice:hover .caption {
+  letter-spacing: 0.5px;
+  color: #198854;
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+
+.notices button {
+  -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.199);
+          box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.199);
+}
+
+.notices button:hover {
+  background-color: transparent;
+  color: #198854;
+}
+
+.service-card {
+  gap: 20px;
+}
+
+.service-card .e-governance,
+.service-card .AASS,
+.service-card .tender {
+  border: 1px solid #198854;
+}
+
+.service-card .e-governance h3,
+.service-card .AASS h3,
+.service-card .tender h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #198854;
+  padding: 1rem 0;
+  color: whitesmoke;
+}
+
+.service-card .e-governance p,
+.service-card .AASS p,
+.service-card .tender p {
+  padding: 1rem 2rem;
+}
+
+.c-persons {
+  gap: 20px;
+}
+
+.c-persons h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  color: whitesmoke;
+  background-color: #198854;
+}
+
+.c-persons .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-persons .bottom img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.c-persons .bottom p {
+  font-size: 0.8rem;
+  padding: 1rem .5rem;
+}
+
+.c-persons .bottom p span {
+  font-size: 1.5rem;
+  font-family: "Island Moments", cursive;
+}
+
+.footer {
+  color: white;
+  height: 500px;
+}
+
+.footer .useful-links h3 {
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+.footer .useful-links li {
+  list-style: none;
+  margin: .5rem 0;
+}
+
+.footer .useful-links li a {
+  text-decoration: none;
+  color: #198854;
+}
+
+@media only screen and (max-width: 600px) {
+  .page2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .service-card, .c-persons {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .service-card .e-governance,
+  .service-card .AASS,
+  .service-card .tender {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
