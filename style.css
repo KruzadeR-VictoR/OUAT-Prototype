@@ -204,6 +204,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .header-image h2 {
+    font-size: .5rem !important;
+    margin: 0 !important;
+  }
   .page2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
